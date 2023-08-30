@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <title>Navagio Hub - O Marketing Impulsiona</title>
+</head>
+<body>
+
+    <div id="main" class="main">
+
+            <div id="language_container" class="language-container">
+
+                <a href="#"><p id="ptBR_language" class="languages">PT-BR</p></a>
+                <a href="#"><p id="sp_language" class="languages">SP</p></a>
+                <a href="#"><p id="eng_language" class="languages">ENG</p></a>
+
+            </div>
+
+            <div id="logotype_div" class="logotype_container">
+
+                <img id="logotype" src="/public/images/logotype_navagiohub.png" alt="Navagio Hub Logotype">
+
+            </div>
+
+            <h1 id="headline_slogan" class="headline">O Marketing Impulsiona.</h1>
+
+
+            <div class="form-container">
+
+                <h2 id="headline_sendMessage" class="headline">
+                    DEIXE SEU CONTATO CONOSCO, SE VOCÊ QUER CRESCER NO DIGITAL
+                </h2>
+
+                <form id="form_sendMessage" action="/submit" method="POST">
+
+                    <label for="name">Nome:</label>
+                    <input id="name" class="name input_form" type="text" name="name" placeholder="Nome" maxlength="30" required>
+                    <label for="phone">Telefone:</label>
+                    <input id="phone" class="phone input_form" type="tel" name="phone" placeholder="Telefone" maxlength="11" pattern="[0-9]+" required>
+                    <label for="email">E-mail:</label>
+                    <input id="email" class="email input_form" type="email" name="email" placeholder="E-mail" maxlength="30" required>
+                    <button id="submitButton_form" type="submit">Enviar</button>
+                
+                </form>
+
+                <div id="confirmationMessage" style="display: none;"></div>
+
+            </div>
+
+
+
+        <!--OUR MISSION-->
+
+        <div id="ourmission_div" class="ourmission-container">
+
+            <div id="ourmission_text_div" class="ourmission_text-container">
+
+                <p id="ourmission_text" class="ourmission_text">
+                    Você quer criar sua identidade digital para que seja: <br/> <br/>
+                    1º + visto <br/>
+                    2º + conhecido <br/>
+                    3º + procurado <br/>
+                </p>
+    
+                <p id="ourmission_text2" class="ourmission_text">
+                    E assim fazer com que seu negócio cresça e você viva seu sonho e uma vida melhor?
+                </p>
+
+            </div>
+
+            <div id="ourmission-headlineandIcon_div" class="ourmission-headlineandIcon">
+
+                <h3 id="headline_ourmission" class="headline">ESSA É NOSSA MISSÃO!</h3>
+
+            </div>
+
+            <img src="/public/images/blue_target.png" alt="Target" id="target_ourmission" class="target">
+
+        </div>
+
+
+
+        <!--ABOUT US-->
+
+        <div id="aboutUs_div" class="aboutUs-container">
+
+            <div class="headline-text-container">
+                
+                <div id="headline_icon_aboutUs_div">
+
+                    <h3 id="headline_aboutUs" class="headline">QUEM SOMOS NÓS?</h3>
+                    <img src="/public/images/mediaOnscreen.png" alt="Media on Screen" id="media_aboutUs" class="media_aboutUs">
+    
+                </div>
+    
+                <div id="text_aboutus_div">
+    
+                    <p id="text_aboutus" class="text_aboutus">
+                        A Navagio Hub é uma empresa de Soluções Digitais que nasceu com o objetivo de ajudar pequenos empreendedores prestadores de serviços e negócios à crescerem na Internet, fazendo com que seus negócios sejam mais procurados e seus serviços demandados por meio da criação de sites institucionais, estratégias eficazes de marketing que retornam em mais clientes e vendas para a empresa.
+                        O nosso trabalho envolve usar todos os tipos de tecnologias, processos, métodos e estratégias mais novas e decisivas do mercado para que seu negócio se torne bem-sucedido.
+                        Nós somos apaixonados por aquilo com que trabalhamos, que é ajudar  você à não ficar para trás, sempre se adaptando às novidades do mercado para assim vender mais e viver uma vida próspera por meio do seu próprio trabalho.
+                    </p>
+                
+                </div>
+    
+            </div>
+        
+        </div>
+
+
+
+        <!--NAVAGIO HUB IS FOR-->
+
+        <div id="navagiohubisfor_div" class="navagiohubisfor-container">
+            
+            <div class="navagiohubisfor-content">
+
+                <h3 id="headline_navagiohubisfor" class="headline">
+                    A NAVAGIO HUB É PARA...
+                </h3>
+
+                <div class="professionals-and-image-container">
+
+                    <div class="types_of_professionals-container">
+
+                        <p id="text_navagiohubisfor" class="text_navagiohubisfor">
+                        
+                            1º Prestador de Serviços <br />
+                            2º Pequeno Empreendedor <br />
+                            3º Empresa de Pequeno Porte <br />  
+                            4º Profissional Autônomo <br />
+                            5º Palestrante Educativo <br /> 
+                            6º Criador de Conteúdos educativos <br />
+                            7º Criador de Cursos educativos
+                        
+                      </p>    
+
+                    </div>
+
+                
+                    <div class="peopleCommunication_icon">
+
+                        <img src="/public/images/peopleCommunication.png" alt="People Communication" id="peopleCommunication" class="peopleCommunication">
+                    
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+            <div class="navagionshubisfortext-container">
+
+                <p id="navagionshubisfortext">
+
+                    Você está no lugar certo, onde será ouvido e atendido com atenção. Aqui, o nosso trabalho será tornar o seu trabalho mais fácil no que diz respeito a conquistar clientes, realizar mais vendas e ser reconhecido.
+    
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!--WITH NAVAGIO HUB YOU'LL HAVE-->
+
+        <div id="youllhave_div" class="youllhave-container">
+
+            <div class="youllhave-content">
+
+                <div id="youllhave_headlineandicon_div" class="headline-and-icon-container">
+
+                    <h3 id="youllhave_headline" class="youllhave_headline">
+                        COM A NAVAGIO HUB VOCÊ TERÁ...
+                    </h3>
+                    <img id="growtharrow_icon" class="growtharrow_icon" src="/public/images/growtharrow.png" alt="Growth Arrow">
+
+                </div>
+
+                    <div class="text_youllhave-container">
+
+                        <p class="text_youllhave">
+                            1º <strong class="plus_sinal">+</strong> Visibilidade com  <strong class="minus_sinal">-</strong>  investimento
+                        </p>
+                        <p class="text_youllhave">
+                            2º <strong class="plus_sinal">+</strong> clientes com  <strong class="minus_sinal">-</strong>  investimento
+                        </p>
+                        <p class="text_youllhave">
+                            3º <strong class="plus_sinal">+</strong> Vendas com  <strong class="minus_sinal">-</strong>  investimento
+                        </p>
+                        <p class="text_youllhave">
+                            4º <strong class="plus_sinal">+</strong> Visitas em seu site com  <strong class="minus_sinal">-</strong>  investimento
+                        </p>
+                        <p class="text_youllhave">
+                            5º <strong class="plus_sinal">+</strong> Visitas em seu estabelecimento com  <strong class="minus_sinal">-</strong>  investimento
+                        </p>
+
+                    </div>
+            </div>
+
+        </div>
+
+
+
+        <!--WITH NAVAGIO HUB YOU'LL GET-->
+
+        <div id="youllget_div" class="youllget-container">
+
+            <div id="yollget_text_div" class="youllget_text-container">
+
+                <p class="text_youllget">1º Construir MINHA presença online</p> 
+                <p class="text_youllget">2º Superar a concorrência</p>
+                <p class="text_youllget">3º Adaptar-se ao mercado e as novas demandas</p>
+                <p class="text_youllget">4º Lançar novos produtos e serviços de sucesso</p>
+                <p class="text_youllget">5º Alcançar metas de crescimento</p>
+                <p class="text_youllget">6º Criar UMA COMUNIDADE leal à MINHA marca</p>
+
+            </div>
+
+            <div id="headlineandicon_yollget_div" class="headlineandicon_yollget-container">
+
+                <h3 id="headline_youllget" class="headline">
+                    COM A NAVAGIO HUB VOCÊ CONSEGUE!
+                </h3>
+    
+                <img src="/public/images/trophie.png" alt="Trophie" id="trophie_icon">
+
+            </div>
+
+        </div>
+
+
+
+        <!--PLANS-->
+
+        <h3 id="plans_headline" class="plans_headline">PLANOS - SERVIÇOS OFERECIDOS</h3>
+
+        <div id="plans_table" class="plans_table">
+
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>SERVIÇOS</th>
+                        <th>STARTER</th>
+                        <th>GOLD</th>
+                        <th>DIAMOND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Criação (ou Repaginação) de Site Institucional com Otimização para SEO</td>
+                        <td class="check">❌</td>
+                        <td class="close">❌</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação de Landing Page de Alta Conversão com SEO</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação (ou Repaginação) de Design para forte Identidade Digital nas Redes Sociais</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação de ideias e Roteiros de conteúdos para as Redes Sociais</td>
+                        <td class="check">❌</td>
+                        <td class="close">❌</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Produção e Edição de conteúdos para as Redes Sociais</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação de Campanhas e Criativos Poderosos para Campanhas</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação e Captura de Listas de Clientes em Potencial</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação de Campanhas de E-mail Marketing</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação de Campanhas de Re-Marketing</td>
+                        <td class="check">❌</td>
+                        <td class="close">❌</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Criação de Chatbots e Atendimento Personalizados para aumentar conversão e velocidade de atendimento</td>
+                        <td class="check">❌</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Relatórios de Monitoramento e Análise de métricas e Resultados</td>
+                        <td class="check">✔️</td>
+                        <td class="close">✔️</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Testes A/B</td>
+                        <td class="check">❌</td>
+                        <td class="close">❌</td>
+                        <td class="check">✔️</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="1">PREÇOS</td>
+                        <td id="starter-price">R$799,95</td>
+                        <td id="gold-price">R$1.499,95</td>
+                        <td id="diamond-price">R$4.499,95</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+        <div id="cards_plans_div" class="plans_cards-container">
+
+            <!--CARDS-->
+            <div class="card-container">
+
+                <div class="card" onclick="openPopup('PLANO STARTER - R$ 799,95', '✔️ Criação de Landing Page de Alta Conversão com SEO\n\n✔️ Criação (ou Repaginação) de Design para forte Identidade Digital nas Redes Sociais\n\n✔️ Produção e Edição de conteúdos para as Redes Sociais\n\n✔️ Criação de Campanhas e Criativos Poderosos para Campanhas\n\n✔️ Criação e Captura de Listas de Clientes em Potencial\n\n✔️ Criação de Campanhas de E-mail Marketing\n\n✔️ Relatórios de Monitoramento e Análise de métricas e Resultados')">
+                  <h3>STARTER</h3>
+                </div>
+
+                <div class="card" onclick="openPopup('PLANO GOLD - R$ 1.499,95', '✔️ Criação de Landing Page de Alta Conversão com SEO\n\n✔️ Criação (ou Repaginação) de Design para forte Identidade Digital nas Redes Sociais\n\n✔️ Produção e Edição de conteúdos para as Redes Sociais\n\n✔️ Criação de Campanhas e Criativos Poderosos para Campanhas\n\n✔️ Criação e Captura de Listas de Clientes em Potencial\n\n✔️ Criação de Campanhas de E-mail Marketing\n\n✔️ Criação de Chatbots e Atendimento Personalizados para aumentar conversão e velocidade de atendimento\n\n✔️ Relatórios de Monitoramento e Análise de métricas e Resultados')">
+                  <h3>GOLD</h3>
+                </div>
+
+                <div class="card" onclick="openPopup('PLANO DIAMOND - R$ 4.499,95', '✔️ Criação (ou Repaginação) de Site Institucional com Otimização para SEO\n\n✔️ Criação de Landing Page de Alta Conversão com SEO\n\n✔️ Criação (ou Repaginação) de Design para forte Identidade Digital nas Redes Sociais\n\n✔️ Criação de ideias e Roteiros de conteúdos para as Redes Sociais\n\n✔️ Produção e Edição de conteúdos para as Redes Sociais\n\n✔️ Criação de Campanhas e Criativos Poderosos para Campanhas\n\n✔️ Criação e Captura de Listas de Clientes em Potencial\n\n✔️ Criação de Campanhas de E-mail Marketing\n\n✔️ Criação de Campanhas de Re-Marketing\n\n✔️ Criação de Chatbots e Atendimento Personalizados para aumentar conversão e velocidade de atendimento\n\n✔️Relatórios de Monitoramento e Análise de métricas e Resultados')">
+                  <h3>DIAMOND</h3>
+                </div>
+
+            </div>
+
+
+            <!--CLOSE POPUP-->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                  <h2 id="popup-title"></h2>
+                  <p id="popup-info"></p>
+                  <button class="close-button" onclick="closePopup()">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--PRIVATE PLAN-->
+        <div id="private_plan_div" class="private_plan-container">
+
+            <div id="private_plan_headlineIcon_div" class="private_plan_headlineIcon-container">
+
+                <img src="/public/images/happyandcoolemoji.png" alt="Happy and Cool Emoji" id="private_plan_icon" class="private_plan_icon">
+                <h3 id="private_plan_headline" class="private_plan_headline">PLANO PRIVATE</h3>
+            </div>
+
+            <div id="private_plan_text_div" class="private_plan_text-container">
+
+                <p id="private_plan_text" class="private_plan_text">
+                    Se você deseja um plano mais personalizado, onde precisará de mais ou menos serviços específicos e diferentes daqueles que oferecemos de forma convencional, <strong class="highlights">entre em contato conosco</strong> para fazer um orçamento especial para você de acordo com suas necessidades e objetivos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!--TYPES OF PAYMENTS-->
+
+        <div id="types_of_payments_div" class="types_of_payments-container">
+
+            <div id="types_of_payments_headlineIcon_div" class="types_of_payments_headlineIcon-container">
+
+                <h3 id="types_of_payments_headline" class="types_of_payments_headline">
+                    MOEDAS E FORMAS DE PAGAMENTO
+                </h3>
+
+                <img src="/public/images/shakehands.png" alt="Shake Hands" id="shakehandsIcon" class="shakehandsIcon">
+
+            </div>
+
+            <div id="types_of_payments_div" class="types_of_payments-container">
+
+                <p id="types_of_payments_text1" class="types_of_payments_text">
+                    Na navagio hub aceitamos as moedas: <strong class="highlights">Real (BRL), Dólar (USD), Euro (EUR) e bitcoin (BTC).</strong>
+                </p>
+
+                <p id="types_of_payments_text1" class="types_of_payments_text">
+                    *Desconto Especial de <strong class="highlights promotions_plans">15%</strong> para você que for pagar em <strong class="highlights"> Dólar (USD) e Euro (EUR)!!!</strong>
+                </p>
+
+                <p id="types_of_payments_text1" class="types_of_payments_text">
+                    *Desconto Especial de <strong class="highlights promotions_plans">30%</strong> para você que for pagar em <strong class="highlights"> bitcoin (BTC)!!!</strong>
+                </p>
+
+                <p id="types_of_payments_text2" class="types_of_payments_text">
+                    Você não precisa se preocupar com o investimento inicial que fará para que tenha sucesso na internet.
+                </p>
+
+                <p id="types_of_payments_text3" class="types_of_payments_text">
+                    Na Navagio Hub, nós fazemos de tudo para que caiba no seu orçamento. não tenha receio de negociar conosco, você poderá dividir em até <strong class="highlights">5x sem juros a partir do plano Golden para caber no seu orçamento.</strong> No plano Starter você só precisará dar uma <strong class="highlights">entrada de 50% do valor e o restante você só pagará no final do plano quando ver os resultados.</strong>
+                </p>
+
+            </div>
+
+            <hr class="divider">
+
+
+
+            <!--BUT I DON'T HAVE MONEY OR I HAVE FEAR TO LOSE MY MONEY-->
+
+            <div id="nomoney-div" class="nomoney_container">
+
+                <div class="nomoney_content">
+                    
+                    <h3 id="nomoney_headline" class="nomoney_headline">
+                        MAS EU TENHO MEDO DE PERDER DINHEIRO...
+                    </h3>
+                    
+                    <p id="types_of_payments_text4" class="types_of_payments_text">
+                        <strong class="highlights">Não se preocupe, isso não é um problema para nós!</strong>
+                        <br /> 
+                        Também temos um outro tipo de contrato, o <strong class="highlights">"Contrato de Pagamento Baseado em Resultados"</strong>, onde recebemos somente depois do seu investimento ter gerado resultados para você!
+                        <br /> 
+                        Para isso, nós fazemos um acordo com você que tem medo de perder dinheiro na Internet, onde recebemos uma parte do <strong class="highlights">lucro final de acordo com o retorno sobre o investimento feito</strong>, porém é necessário <strong class="highlights">conversar conosco</strong> para avaliarmos sua situação.
+                    </p>
+
+                    <img src="/public/images/happy_woman.png" alt="Happy Woman" id="happy_woman_icon" class="happy_woman_icon">
+                
+
+                </div>
+
+            </div>
+            
+            
+
+        </div>
+
+
+
+        <!--WHATSAPP CONTACT-->
+
+        <div id="whatsapp_div" class="whatsapp-container">
+
+            <div id="headlineIcon_div" class="headlineIcon-container">
+                
+                <h3 id="headline_whatsapp" class="headline_whatsapp">TIRE SUAS DÚVIDAS CONOSCO</h3>
+
+                <img src="/public/images/phoneIcon.png" alt="Phone" id="phoneIcon" class="phoneIcon">
+
+            </div>
+
+            <a href="#">
+                <img src="/public/images/whatsapp-icon.png" alt="Whatsapp Icon" id="whatsappIcon" class="whatsappIcon">
+            </a>
+
+            <div id="whatsapp_text_div" class="whatsapp_text-container">
+
+                <p id="whatsapp_text" class="whatsapp_text">
+                    CLIQUE NO SÍMBOLO DO WHATSAPP PARA RESPONDERMOS SUAS DÚVIDAS.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!--FOOTER-->
+        <div id="footer" class="footer">
+
+            <div id="contato_div" class="footer-section">
+                <h4 class="footer-title">Contato</h4>
+                    <h6>Número de Telefone</h6>
+                    <h6>E-mail de contato</h6>
+                    <h6>Redes Sociais</h6>
+                </ul>
+            </div>
+
+            <div id="info_site_div" class="footer-section">
+                <h4 class="footer-title">Informações sobre o site</h4>
+                    <h6>Política de Privacidade</h6>
+                    <h6>Termos de Uso</h6>
+                </ul>
+            </div>
+
+            <div id="sobre_empresa_div" class="footer-section">
+                <h4 class="footer-title">Sobre a Empresa</h4>
+                    <h6>Quem Somos Nós</h6>
+                    <h6>Missões</h6>
+                    <h6>Planos de Serviços</h6>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="footer_copyright">
+            <h5 id="footer_copyright_text">© 2023, navagio hub. Todos os direitos reservados.</h5>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script src="/public/popup/popupcards_plans.js"></script>
+    
+</body>
+</html>
