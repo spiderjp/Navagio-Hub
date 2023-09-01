@@ -4,7 +4,7 @@ to = "public/html/index.html"
 status = 200
 
 [[redirects]]
-from = "/submit-form"
-to = "public/html/confirmation_sendForm.html"
+from = "https://neon-lollipop-631625.netlify.app/submit-form"
+to = "https://neon-lollipop-631625.netlify.app/confirmation_sendForm.html"
 status = 200
 
