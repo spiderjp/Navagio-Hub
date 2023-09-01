@@ -63,7 +63,7 @@ app.post('/submit-form', (req, res) => {
           }
 
           // Redirecione para a página de confirmação após a inserção bem-sucedida
-          res.redirect('/html/confirmation_sendForm.html');
+          res.redirect('/public/html/confirmation_sendForm.html');
         }
       );
     }
