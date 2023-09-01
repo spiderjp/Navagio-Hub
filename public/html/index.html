@@ -34,7 +34,7 @@
                     DEIXE SEU CONTATO CONOSCO, SE VOCÊ QUER CRESCER NO DIGITAL
                 </h2>
 
-                <form id="form_sendMessage" action="javascript:void(0)" method="POST">
+                <form id="form_sendMessage" action="submit-form" method="POST">
 
                     <label for="name">Nome:</label>
                     <input id="name" class="name input_form" type="text" name="name" placeholder="Nome" maxlength="30" required>
@@ -42,11 +42,13 @@
                     <input id="phone" class="phone input_form" type="tel" name="phone" placeholder="Telefone" maxlength="11" pattern="[0-9]+" required>
                     <label for="email">E-mail:</label>
                     <input id="email" class="email input_form" type="email" name="email" placeholder="E-mail" maxlength="30" required>
+
+                    <div id="errorMessage" style="color: red;"></div>
+    
+
                     <button id="submitButton_form" type="submit">Enviar</button>
                 
                 </form>
-
-                <div id="confirmationMessage" style="display: none;"></div>
 
             </div>
 
@@ -549,7 +551,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
     <script src="/public/popup/popupcards_plans.js"></script>
-    <script src="/server/routes/confirmationFormsended.js"></script>
+    <scrpit src="/server/routes/errorFormsended.js"></scrpit>
     
 </body>
 </html>

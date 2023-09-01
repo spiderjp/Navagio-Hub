@@ -1,20 +1,6 @@
-const form = document.getElementById('form_sendMessage');
-const confirmationMessage = document.getElementById('confirmationMessage');
+const params = new URLSearchParams(window.location.search);
+const userName = params.get('name');
 
-form.addEventListener('submit', async (event) => {
-
-    event.preventDefault();
-    const formData = new FormData(form);
-    const response = await fetch('/submit', {
-        method: 'POST',
-        body: formData
-    });
-
-    if (response.ok) {
-        form.reset();
-        confirmationMessage.style.display = 'block';
-        confirmationMessage.innerText = 'Dados inseridos com sucesso.';
-    }
-    
-});
-
+if (userName) {
+    document.getElementById('userName').textContent = userName;
+}

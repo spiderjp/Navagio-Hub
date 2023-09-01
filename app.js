@@ -12,27 +12,6 @@ connection.connect((error) => {
 
 
 
-//CREATING TABLE IN DATABASE CONNECTED
-
-/*const createLeadsTableQuery = `
-    CREATE TABLE IF NOT EXISTS leads (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        phone VARCHAR(15) NOT NULL,
-        email VARCHAR(255) NOT NULL
-    )
-`;
-
-connection.query(createLeadsTableQuery, (error, results) => {
-    if (error) {
-        console.error('Erro ao criar tabela:', error);
-    } else {
-        console.log('Tabela "leads" criada ou já existe.');
-    }
-});*/
-
-
-
 //SENDING DATAS TO LEADS TABLE
 
 const express = require('express');
@@ -42,7 +21,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.post('/submit', (req, res) => {
+app.post('/submit-form', (req, res) => {
     
     const { name, phone, email } = req.body;
 
@@ -68,7 +47,7 @@ app.post('/submit', (req, res) => {
             console.error('Erro ao inserir dados:', error);
             return res.status(500).json({ error: 'Erro ao processar a requisição.' });
         } else {
-            return res.status(200).json({ message: 'Dados inseridos com sucesso.' });
+            return res.redirect(`/public/html/confirmation-sendForm.html?name=${name}`);
         }
     });
 });
