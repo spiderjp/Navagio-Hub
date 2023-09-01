@@ -2,3 +2,9 @@
 from = "/*"
 to = "public/html/index.html"
 status = 200
+
+from = "/submit-form"
+to = "/submit-form"
+status = 200
+force = true
+conditions = {Method = ["POST"]}
