@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
   
 
-app.post('/submit-form', (req, res) => {
+app.post('/submit_form', (req, res) => {
 
   const { name, phone, email } = req.body;
 
