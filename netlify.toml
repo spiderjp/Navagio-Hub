@@ -3,4 +3,9 @@ from = "/*"
 to = "/public/html/index.html"
 status = 200
 
+[[redirects]]
+from = "/submit_form"
+to = "/public/html/submit_form.html"
+status = 200
+
 
