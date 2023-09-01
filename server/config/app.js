@@ -18,10 +18,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
   });
 
-
-app.get('/submit-form', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'confirmation_sendForm.html'));
-});
   
 
 app.post('/submit-form', (req, res) => {
