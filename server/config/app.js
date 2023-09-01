@@ -11,35 +11,35 @@ app.use(express.static('public'));
 
 const connection = mysql.createConnection(process.env.DATABASE_URL);
 
-// Configure a variável de ambiente PORT ou use a porta 3000 como padrão
+
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
   });
 
+
+app.get('/submit-form', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'html', 'confirmation_sendForm.html'));
+});
   
 
 app.post('/submit-form', (req, res) => {
 
   const { name, phone, email } = req.body;
 
-  // Verifique se todos os campos estão preenchidos
   if (!name || !phone || !email) {
     return res.status(400).send('Todos os campos são obrigatórios.');
   }
 
-  // Verifique se o telefone contém apenas números
   if (!/^[0-9]+$/.test(phone)) {
     return res.status(400).send('O telefone deve conter apenas números.');
   }
 
-  // Verifique se o e-mail contém '@'
   if (!email.includes('@')) {
     return res.status(400).send('O e-mail deve conter um "@".');
   }
 
-  // Verifique se já existe um registro com o mesmo telefone ou e-mail
   connection.query(
     'SELECT * FROM leads WHERE phone = ? OR email = ?',
     [phone, email],
@@ -53,7 +53,6 @@ app.post('/submit-form', (req, res) => {
         return res.status(400).send('Este telefone ou e-mail já está cadastrado.');
       }
 
-      // Se não houver duplicação, insira os dados na tabela
       connection.query(
         'INSERT INTO leads (name, phone, email) VALUES (?, ?, ?)',
         [name, phone, email],
@@ -63,7 +62,6 @@ app.post('/submit-form', (req, res) => {
             return res.status(500).send('Erro no servidor.');
           }
 
-          // Redirecione para a página de confirmação após a inserção bem-sucedida
           res.redirect('/public/html/confirmation_sendForm.html');
         }
       );
