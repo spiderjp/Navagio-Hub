@@ -11,7 +11,8 @@ app.use(express.static('public'));
 
 const connection = mysql.createConnection(process.env.DATABASE_URL);
 
-
+// Configure a variável de ambiente PORT ou use a porta 3000 como padrão
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
@@ -68,8 +69,8 @@ app.post('/submit-form', (req, res) => {
       );
     }
   );
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+  });
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
