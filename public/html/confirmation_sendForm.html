@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/confirmation_sendForm.css">
     <title>Confirmação de Envio do Formulário</title>
 </head>
 <body>
-    <h1>Obrigado por enviar seus dados de contato, <span id="userName"></span>!</h1>
-    <p>Seus dados foram registrados com sucesso, e entraremos em contato contigo o mais breve possível.</p>
 
+    <div id="logotype_div" class="logotype_container">
+
+       <a href="/public/html/index.html">
+        
+            <img id="logotype" src="/public/images/logotype_navagiohub.png" alt="Navagio Hub Logotype">
+        
+        </a>
+
+    </div>
+
+    <div class="thankyou_message">
+
+        <h1>Obrigado por enviar seus dados de contato, <span id="userName"></span>!</h1>
+        <p>Nós estamos felizes em saber que tem interesse em nossos serviços. Seus dados foram registrados com sucesso, e entraremos em contato contigo o mais breve possível!</p>
+        <p>Nos veremos logo mais,</p>
+        <p id="assignature">Navagio Hub.</p>
+
+    </div>
+    
     <script src="/server/routes/confirmationFormsended.js"></script>
 </body>
 </html>

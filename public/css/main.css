@@ -185,7 +185,7 @@ h3#headline_ourmission{
 }
 
 #target_ourmission{
-    width: 40%;
+    width: 200px;
     padding: 0;
     margin: 0 auto;
     margin-top: 5px;
@@ -2617,6 +2617,7 @@ h5{
         text-align: center;
     }
 }
+
 
 
 
