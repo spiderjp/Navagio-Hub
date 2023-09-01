@@ -58,7 +58,7 @@ app.post('/submit-form', (req, res) => {
             return res.status(500).send('Erro no servidor.');
           }
 
-          res.redirect('/public/html/confirmation_sendForm.html');
+          res.redirect('/public/html/submit_form.html');
         }
       );
     }
