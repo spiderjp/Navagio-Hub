@@ -13,6 +13,10 @@ a {
   a:visited {
     color: inherit;
   }
+
+  a.link_footer{
+    color: #F5F5F5;
+  }
   
   ul {
     list-style-type: none;
@@ -38,6 +42,12 @@ p.languages{
     justify-content: flex-end;
 }
 
+.logotype_slogan_container{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+}
 
 img#logotype{
     width: 400px;
@@ -129,6 +139,21 @@ label, input, button{
     box-shadow: 6px 6px 0px 0px rgba(13,72,161,1);
 }
 
+#sending_email{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+#link_sendemail{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: #FF5722;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
 
 
 
@@ -318,30 +343,26 @@ p#text_navagiohubisfor{
     color: #F5F5F5;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    /* paragraph */
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 200% */
+    line-height: 28px;
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
 
 p#navagionshubisfortext{
     margin: 0 auto;
-    width: 1083px;
+    width: 80%;
     color: #F5F5F5;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    /* paragraph */
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 200% */
+    line-height: 28px;
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -354,8 +375,6 @@ div#youllhave_div{
     width: 900px;
     height: 300px;
     margin: 0 auto;
-    background: #4386ED;
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.23), 0px 10px 20px 0px rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,7 +384,6 @@ div#youllhave_div{
 
 .youllhave-content {
     width: 100%;
-    max-width: 1200px; /* Defina um valor máximo para centralizar na tela */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -403,20 +421,18 @@ img#growtharrow_icon{
 
 .text_youllhave-container {
     width: 100%;
-    text-align: left;
+    text-align: right;
     margin-top: 20px; /* Espaçamento entre as divs */
 }
 
 p.text_youllhave{
-    color: #F5F5F5;
+    color: #312c2c;
     text-align: center;
-
-    /* paragraph */
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; /* 200% */
+    line-height: 28px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -447,48 +463,54 @@ strong.minus_sinal{
 
 /*YOU'LL GET*/
 
-div#youllget_div{
+div#youllget_div {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background: #0D47A1;
     box-shadow: 0px 15px 12px 0px rgba(0, 0, 0, 0.22), 0px 19px 38px 0px rgba(0, 0, 0, 0.30);
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px;
 }
 
 .youllget_text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 p.text_youllget{
+    margin: 0 auto;
+    margin-left: 30px;
     color: #F5F5F5;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 5px;
-    
-    /* paragraph */
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 200% */
+    line-height: 28px;
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
 
 .headlineandicon_yollget-container {
+    flex: 1; /* Ocupa metade do espaço disponível */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+
 h3#headline_youllget{
-    width: 434px;
-    height: 96px;
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
     color: var(--headings, #FF5722);
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -497,13 +519,12 @@ h3#headline_youllget{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 0px 10px 0px 100px; /* Espaçamento entre título e imagem */
 }
 
 img#trophie_icon{
+    margin: 0 auto;
     width: 200px;
-    height: 152px;
-    padding-right: 80px;
+    height: 100px;
 }
 
 
@@ -640,14 +661,15 @@ p#private_plan_text{
 
 .types_of_payments_headlineIcon-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que o título e a imagem se ajustem verticalmente se necessário */
-    gap: 20px; /* Espaço entre o título e a imagem */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 
 h3#types_of_payments_headline,
 h3#nomoney_headline{
+    width: 100%;
     color: var(--headings, #FF5722);
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -659,14 +681,16 @@ h3#nomoney_headline{
 }
 
 #shakehandsIcon {
-    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    padding: 0;
+    margin: 0 auto;
+    width: 100px; 
     height: 100px;
-    height: auto; /* Isso permite que a altura da imagem seja ajustada proporcionalmente */
+    height: auto; 
 }
 
 div#types_of_payments_div{
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 }
 
 p.types_of_payments_text{
@@ -1400,6 +1424,11 @@ h5{
         padding: 0;
         text-align: center;
     }
+
+    svg{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 
@@ -2006,6 +2035,11 @@ h5{
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+
+    svg{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -2615,6 +2649,11 @@ h5{
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+
+    svg{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -3248,5 +3287,10 @@ h5{
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+    
+    svg{
+        width: 100px;
+        height: 100px;
     }
 }
