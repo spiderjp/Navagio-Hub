@@ -1142,14 +1142,16 @@ h5{
     }
 
     div>p.text_youllget{
-        width: 40%;
-        text-align: left;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     img#trophie_icon{
         padding: 0;
-        width: 160px;
-        height: 100px;
+        width: 40%;
+        height: 20%;
     }
 
     div#headlineandicon_yollget_div{
