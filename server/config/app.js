@@ -15,7 +15,7 @@ const connection = mysql.createConnection(process.env.DATABASE_URL);
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.redirect('/html/index.html');
+  res.redirect('/public/html/index.html');
   });
   
 
@@ -58,7 +58,7 @@ app.post('/submit-form', (req, res) => {
             return res.status(500).send('Erro no servidor.');
           }
           console.log('Inserção bem-sucedida.');
-          res.redirect('/html/successfulformsubmission.html');
+          res.redirect('/public/html/successfulformsubmission.html');
         }
       );
     }
