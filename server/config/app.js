@@ -53,15 +53,16 @@ app.post('/submit-form', (req, res) => {
         return res.status(400).send('Este telefone ou e-mail já está cadastrado.');
       }
 
+      console.log('Iniciando inserção no banco de dados...');
       connection.query(
         'INSERT INTO leads (name, phone, email) VALUES (?, ?, ?)',
         [name, phone, email],
         (err) => {
           if (err) {
-            console.error(err);
+            console.error('Erro na inserção:', err);
             return res.status(500).send('Erro no servidor.');
           }
-
+          console.log('Inserção bem-sucedida.');
           res.redirect(path.join('/html', 'successfulformsubmission.html'));
         }
       );
