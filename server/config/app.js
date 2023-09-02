@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const dotenv = require('dotenv');
 const path = require('path');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '.env') });
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -18,9 +18,13 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
   });
 
+
+app.get('/submit-form', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'html', 'submit_form.html'));
+});
   
 
-app.post('/submit_form', (req, res) => {
+app.post('/submit-form', (req, res) => {
 
   const { name, phone, email } = req.body;
 
@@ -58,7 +62,7 @@ app.post('/submit_form', (req, res) => {
             return res.status(500).send('Erro no servidor.');
           }
 
-          res.redirect('/public/html/submit_form.html');
+          res.redirect('../public/html/confirmation_sendForm.html');
         }
       );
     }
