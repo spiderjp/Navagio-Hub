@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/submit-form', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'submit_form.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', 'successfulformsubmission.html'));
 });
   
 
@@ -62,7 +62,7 @@ app.post('/submit-form', (req, res) => {
             return res.status(500).send('Erro no servidor.');
           }
 
-          res.redirect('../public/html/confirmation_sendForm.html');
+          res.redirect(path.join('/html', 'successfulformsubmission.html'));
         }
       );
     }
