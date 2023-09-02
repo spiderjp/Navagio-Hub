@@ -3,9 +3,6 @@ from = "/*"
 to = "/public/html/index.html"
 status = 200
 
-[[redirects]]
-from = "/submit-form"
-to = "/public/html/successfulformsubmission.html"
-status = 200
+
 
 
