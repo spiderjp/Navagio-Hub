@@ -956,7 +956,7 @@ h5{
         margin: 0 auto;
         margin-bottom: 40px;
         background: #0D47A1;
-        width: 80%;
+        width: 90%;
         height: 100%;
         border-radius: 20px 0px 0px 20px;
         display: flex;
@@ -966,7 +966,7 @@ h5{
     }
 
     div#ourmission_text_div{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
     }
@@ -974,7 +974,7 @@ h5{
     p.ourmission_text{
         margin: 0 auto;
         margin-top: 10px;
-        width: 40%;
+        width: 90%;
         text-align: left;
     }
 
