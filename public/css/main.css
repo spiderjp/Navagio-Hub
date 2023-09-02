@@ -974,8 +974,8 @@ h5{
     p.ourmission_text{
         margin: 0 auto;
         margin-top: 10px;
-        width: 64%;
-        text-align: center;
+        width: 40%;
+        text-align: left;
     }
 
     div#ourmission-headlineandIcon_div{
@@ -989,8 +989,7 @@ h5{
     }
 
     #target_ourmission{
-        background-color: #000;
-        height: 10px;
+        height: 100%;
         width: 64%;
         margin: 0 auto;
         margin-top: 5px;
